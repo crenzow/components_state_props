@@ -1,24 +1,20 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+import { Stack } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <>
+      <StatusBar style="light" backgroundColor="#1C1C1C" />
+      <Stack
+        screenOptions={{
+          headerStyle: { backgroundColor: "#1C1C1C" },
+          headerTintColor: "#D4AF37",
+          headerTitleStyle: { fontWeight: "900", fontSize: 15 },
+          headerTitle: "🥊 BOXING COUNTER",
+          headerShadowVisible: false,
+          contentStyle: { backgroundColor: "#1C1C1C" },
+        }}
+      />
+    </>
   );
 }
