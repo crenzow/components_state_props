@@ -30,13 +30,9 @@ export default function ParentScreen() {
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
 
-        {/* PARENT LABEL */}
-        <View style={styles.parentBadge}>
-          <Text style={styles.parentBadgeText}>PARENT COMPONENT (index.tsx)</Text>
-        </View>
 
         <View style={styles.parentCard}>
-          <Text style={styles.parentTitle}>Ako ang Parent Screen</Text>
+          
 
           {/* STATE LOCKER */}
           <View style={styles.stateLocker}>

@@ -32,28 +32,12 @@ export default function CounterDisplay({
   return (
     <View style={styles.childCard}>
 
-      {/* CHILD LABEL */}
-      <View style={styles.childBadge}>
-        <Text style={styles.childBadgeText}>ITO ANG CHILD COMPONENT (CounterDisplay)</Text>
-      </View>
-
-      <Text style={styles.childTitle}>Ako ang Child Component</Text>
-
-      {/* PROPS DATA */}
-      <Text style={styles.propsTag}>⬇ PROPS DATA (Galing sa Parent State)</Text>
-      <View style={styles.divider} />
-
       {/* COUNT DISPLAY */}
       <Animated.Text
         style={[styles.countNumber, { transform: [{ scale: countScale }] }, isAtMin && { color: "#E8193C" }]}
       >
         {count}
       </Animated.Text>
-
-      <View style={styles.divider} />
-      {/* PROPS FUNCTION */}
-      <Text style={styles.propsTag}>⬆ PROPS FUNCTION (Triggers Parent State)</Text>
-
       {/* BUTTONS */}
       <View style={styles.buttons}>
         <CustomButton label="🥊 Add Count" variant="punch" onPress={onAddCount} onHoldTick={onHoldAdd} />
