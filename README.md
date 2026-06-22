@@ -1,7 +1,7 @@
 # 🎥 Project Demo Video
 
 🚀 **Watch the project in action here:**
-👉 **https://youtube.com/shorts/ooTkQLlwCW4?si=K2t5q9iNEw_JcfJB**
+👉 **https://youtube.com/shorts/Yi-K4Ag4ELE?si=AdEqXBFj-b3Mltor**
 
 > ⚡ *Highly recommended: Check the video first to quickly understand the app before running it locally!*
 
